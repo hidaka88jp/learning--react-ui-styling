@@ -19,7 +19,7 @@ export default function Header() {
               <span className='text-accent'>S</span>tyling <span className='text-accent'>P</span>
               ractice
             </span>
-            <span className={clsx(antonio.className, 'text-lg sm:text-xl tracking-[.1em]')}>
+            <span className={clsx(antonio.className, 'text-lg tracking-[.1em] sm:text-xl')}>
               by <span className='text-accent'>T</span>AKA
             </span>
           </h1>

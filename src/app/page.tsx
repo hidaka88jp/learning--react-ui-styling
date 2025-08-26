@@ -8,7 +8,7 @@ export default function Home() {
     <section className='px-4 sm:px-8'>
       <div className='mx-auto w-full max-w-94 sm:max-w-5xl'>
         <div className='py-16 sm:py-32'>
-          <div className='mb-10 flex flex-col items-center justify-center gap-5 sm:gap-8 sm:flex-row'>
+          <div className='mb-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8'>
             <Link
               href='/tailwind'
               className='flex items-center gap-2 text-3xl font-medium hover:text-[#06B6D4]'
