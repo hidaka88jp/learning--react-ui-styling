@@ -22,7 +22,12 @@ export default function TailwindCSS() {
             />
             <div className='text-center transition duration-200 group-hover:text-[#06B6D4]'>
               <h3 className='mb-1 text-xl'>Button</h3>
-              <p>Chapter 5 - 1 (p, 240)</p>
+              <p className='text-sm text-gray-500 transition duration-200 group-hover:text-[#06B6D4]'>
+                CSS Architecture Perfect Guide
+              </p>
+              <p className='text-sm text-gray-500 transition duration-200 group-hover:text-[#06B6D4]'>
+                Chapter 5-1 (p. 240)
+              </p>
             </div>
           </Link>
         </div>
