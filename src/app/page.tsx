@@ -10,7 +10,7 @@ export default function Home() {
         <div className='py-16 sm:py-32'>
           <div className='mb-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8'>
             <Link
-              href='/tailwind'
+              href='/tailwind-css'
               className='flex items-center gap-2 text-3xl font-medium hover:text-[#06B6D4]'
             >
               <SiTailwindcss size={30} />
