@@ -1,0 +1,121 @@
+.content {
+  padding: 0 1rem 4rem;
+  
+  @media (min-width: 640px) {
+    padding: 0 2rem 7rem;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 23.5rem;
+
+    @media (min-width: 640px) {
+      max-width: 64rem;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #663399;
+  margin: 0.75rem 0 2.5rem;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('/icons/css-modules.svg') no-repeat center / contain;
+  }
+}
+
+.content {
+  padding: 0 1rem 4rem;
+
+  @media (min-width: 640px) {
+    padding: 0 2rem 7rem;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 64rem;
+  }
+}
+
+.cardList {
+  display: grid;
+  gap: 2.5rem; // Tailwind gap-10
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 0.75rem; // mb-3
+    border: 4px solid #4b5563; // gray-600
+    border-radius: 0.5rem; // rounded-lg
+    object-fit: cover;
+    object-position: top;
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+
+    .card__link:hover & {
+      transform: scale(1.05);
+      border-color: #663399;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    transition: color 0.2s ease;
+
+    .card__link:hover & {
+      color: #663399;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem; // text-xl
+
+    .card__link:hover & {
+      color: #663399;
+    }
+  }
+
+  &__reference,
+  &__description {
+    font-size: 0.875rem; // text-sm
+    color: #6b7280; // gray-500
+
+    .card__link:hover & {
+      color: #663399;
+    }
+  }
+}
