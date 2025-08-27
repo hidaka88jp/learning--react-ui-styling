@@ -15,12 +15,9 @@ export default function Header() {
             className={`${antonio.className} text-3xl sm:text-4xl`}
             aria-label='Styling Practice by Taka'
           >
-            <span className='mr-4 tracking-[.18em]'>
-              <span className='text-accent'>S</span>tyling <span className='text-accent'>P</span>
-              ractice
-            </span>
+            <span className='mr-4 tracking-[.18em]'>Styling Practice</span>
             <span className={clsx(antonio.className, 'text-lg tracking-[.1em] sm:text-xl')}>
-              by <span className='text-accent'>T</span>AKA
+              by TAKA
             </span>
           </h1>
         </Link>
