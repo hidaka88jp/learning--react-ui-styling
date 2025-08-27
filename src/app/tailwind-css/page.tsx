@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LinkButton from '@/components/shared/LinkButton';
 
 import { SiTailwindcss } from 'react-icons/si';
 
@@ -64,6 +65,11 @@ export default function TailwindCSS() {
               </div>
             </Link>
           ))}
+        </div>
+        <div className='mt-10 flex flex-col items-center justify-center'>
+          <LinkButton href={'/'} aria-label='Back to top page Notes section'>
+            Back to Top
+          </LinkButton>
         </div>
       </div>
     </section>
