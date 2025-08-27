@@ -8,6 +8,7 @@ export default function Home() {
     <section className='px-4 sm:px-8'>
       <div className='mx-auto w-full max-w-94 sm:max-w-5xl'>
         <div className='py-16 sm:py-32'>
+          {/* Tailwind CSS, CSS Modules, CSS-in-JS, MUI, Interactive UI (with JS) */}
           <div className='mb-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8'>
             <Link
               href='/tailwind-css'
@@ -19,7 +20,7 @@ export default function Home() {
             <div className='bg-gray h-0.5 w-6 sm:h-6 sm:w-0.5' />
             <Link
               href='/css-modules'
-              className='hover:text-accent flex items-center gap-2 text-3xl font-medium'
+              className='flex items-center gap-2 text-3xl font-medium hover:text-[#663399]'
             >
               <SiCssmodules size={30} />
               CSS Modules
