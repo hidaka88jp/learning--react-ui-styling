@@ -45,9 +45,9 @@ export default function TailwindCSS() {
             >
               <Image
                 src={content.imageUrl}
-                alt='thumbnail'
-                width={1328}
-                height={938}
+                alt={content.title}
+                width={800}
+                height={600}
                 className='mb-3 aspect-3/2 rounded-lg border-4 border-gray-600 object-cover object-top transition duration-200 group-hover:scale-105 group-hover:border-[#06B6D4]'
               />
               <div className='text-center transition duration-200 group-hover:text-[#06B6D4]'>
